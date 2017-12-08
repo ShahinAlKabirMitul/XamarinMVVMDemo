@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 
 using Xamarin.Forms;
+using XamarinMVVMDemo.Views;
 
 namespace XamarinMVVMDemo
 {
@@ -13,7 +14,7 @@ namespace XamarinMVVMDemo
         {
             InitializeComponent();
 
-            MainPage = new XamarinMVVMDemo.MainPage();
+            MainPage = new NavigationPage(new PlaylistsPage());
         }
 
         protected override void OnStart()
